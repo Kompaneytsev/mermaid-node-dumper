@@ -1,0 +1,22 @@
+{
+    "name": "kompaneytsev/mermaid-node-dumper",
+    "type": "library",
+    "require": {
+        "nikic/php-parser": "^4.15",
+        "jbzoo/mermaid-php": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kompaneytsev\\MermaidNodeDumper\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kompaneytsev\\MermaidNodeDumper\\Tests\\": "tests/"
+        }
+    }
+}

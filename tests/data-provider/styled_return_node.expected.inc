@@ -1,0 +1,28 @@
+graph TB;
+    ID_1("Stmt_Function");
+    ID_2("Identifier");
+    ID_3("Param");
+    ID_4("Expr_Variable");
+    ID_5("Stmt_Expression");
+    ID_6("Expr_FuncCall");
+    ID_7("Name");
+    ID_8("Arg");
+    ID_9("Expr_Variable");
+    ID_10("Stmt_Return (return 1 + $foo;)");
+    style ID_10 fill:#ff0,color:#000
+    ID_11("Expr_BinaryOp_Plus");
+    ID_12("Scalar_LNumber");
+    ID_13("Expr_Variable");
+
+    ID_1-->ID_2;
+    ID_1-->ID_3;
+    ID_3-->ID_4;
+    ID_1-->ID_5;
+    ID_5-->ID_6;
+    ID_6-->ID_7;
+    ID_6-->ID_8;
+    ID_8-->ID_9;
+    ID_1-->ID_10;
+    ID_10-->ID_11;
+    ID_11-->ID_12;
+    ID_11-->ID_13;
